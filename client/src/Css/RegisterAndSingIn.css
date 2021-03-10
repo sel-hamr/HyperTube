@@ -1,0 +1,43 @@
+.Sing {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  animation: slide-in-bl 1s;
+}
+.Title-1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+}
+.Form-Group {
+  width: 48%;
+}
+.Form-Group > p {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  margin-left: 2px;
+  color: white;
+}
+.Inline-Group {
+  display: flex;
+  justify-content: space-between;
+}
+@keyframes slide-in-bl {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 885px) {
+  .Sing {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

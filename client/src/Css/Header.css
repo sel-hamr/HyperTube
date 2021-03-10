@@ -1,0 +1,96 @@
+.Header {
+  width: 100%;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  /* background-color: rgba(34, 40, 49, 0.46); */
+}
+.Logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.Logo > img {
+  width: 55px;
+  margin-left: 25px;
+}
+.Logo > p {
+  color: white;
+  font-size: 30px;
+  font-family: 'B612', sans-serif;
+  user-select: none;
+  animation: tracking-in-expand 0.7s;
+}
+.Nav {
+  height: 65px;
+  display: flex;
+  margin-left: auto;
+  margin-right: 5px;
+  align-items: center;
+}
+.Nav > div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.Nav > div > p {
+  color: white;
+  user-select: none;
+  cursor: pointer;
+}
+
+.LinkActive,
+.Link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.LinkActive::after {
+  position: absolute;
+  bottom: -4px;
+  background-color: #ec4646;
+  content: '';
+  width: 90%;
+  height: 2px;
+  transition: all 0.5s;
+}
+.Link::after {
+  position: absolute;
+  bottom: -4px;
+  background-color: #ec4646;
+  content: '';
+  width: 0%;
+  height: 2px;
+  transition: all 0.5s;
+}
+.Link:hover:after {
+  width: 90%;
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -45px;
+    transform-origin: left;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 0px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .Header {
+    padding-top: 0px;
+    height: 60px;
+    margin-bottom: 0px;
+  }
+  .Logo > img {
+    width: 55px;
+    margin-left: 2px;
+  }
+  .Logo > p {
+    font-size: 21px;
+  }
+}

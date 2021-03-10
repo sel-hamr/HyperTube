@@ -1,0 +1,24 @@
+.Favorite {
+  margin-top: 50px;
+  width: 90%;
+  /* height: 100%; */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ImageNoData {
+  width: 700px;
+}
+.NoData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
+}
+.NoData > p {
+  color: white;
+  font-size: 34px;
+}

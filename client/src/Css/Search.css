@@ -1,0 +1,14 @@
+.search {
+  width: 85%;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  background-color: #222831;
+  border-radius: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all 0.9s;
+  margin-right: 15px;
+  box-sizing: border-box;
+}

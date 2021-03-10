@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.Slide {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: -70px;
+  position: relative;
+}
+.BoxSlider > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+  object-position: top;
+  transform-origin: top;
+}
+.SlideNoActive {
+  width: 0%;
+}
+.SlideNoActive-2 {
+  width: 0%;
+}
+.SliderActive {
+  width: 100%;
+}
+.shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.SliderActive > img {
+  margin-top: 0px;
+  animation: fade-in 1.2s both;
+}
+.BoxSlider {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.ok {
+  width: 380px;
+  height: 5px;
+  position: absolute;
+  bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Box {
+  width: 75px;
+  height: 2px;
+  background-color: white;
+}
+.BoxActive {
+  width: 75px;
+  height: 3px;
+  background-color: #ec4646;
+}
+.detail {
+  width: 65%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 120px;
+  z-index: 8;
+}
+.detail > p:nth-of-type(1) {
+  color: white;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+.detail > p:nth-of-type(2) {
+  color: white;
+  margin-top: 15px;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+.SliderAction {
+  width: 415px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Rating {
+  display: flex;
+  align-items: center;
+}
+.Rating > p:nth-of-type(1) {
+  font-size: 20px;
+  color: white;
+  margin-left: 15px;
+}
+.Rating > p:nth-of-type(2) {
+  color: white;
+  padding: 5px;
+  margin-left: 15px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+.genres {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+@keyframes fade-in {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.02);
+    opacity: 1;
+  }
+}
