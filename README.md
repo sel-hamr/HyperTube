@@ -19,6 +19,13 @@ Use the package manager [npm](https://pip.pypa.io/en/stable/) to install  client
 npm --prefix ./server install
 npm --prefix ./client install
 ```
+## How to launch
+
+
+```bash
+npm start
+npm start
+```
 ## Screenshots
 
 ![](screenShots/1.png)</br>
